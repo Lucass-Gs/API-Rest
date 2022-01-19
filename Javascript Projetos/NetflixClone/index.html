@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/img/couch-solid.svg" type="image/x-icon ">
+
+    <!--owl css-->
+    <link rel="stylesheet " href="assets/css/owl/owl.carousel.css ">
+    <link rel="stylesheet " href="assets/css/owl/owl.theme.default.css ">
+
+    <!--responsividade-->
+    <link rel="stylesheet " href="assets/css/responsive.css ">
+
+
+    <title>Início - CineRoom</title>
+</head>
+
+<body>
+    <header>
+        <div class="container ">
+            <a href="index.html" class="logo "><i class="fas fa-couch "></i>
+                CineRoom
+            </a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="# ">Series</a>
+                <a href="# ">Filmes</a>
+                <a href="# ">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal ">
+            <div class="container ">
+                <h3 class="titulo ">Homem-Aranha: Longe de Casa</h3>
+                <p class="descricao ">Peter Parker está em uma viagem de duas semanas pela Europa, ao lado de seus amigos de colégio, quando é surpreendido pela visita de Nick Fury. Convocado para mais uma missão heroica, ele precisa enfrentar vários vilões que surgem em cidades-símbolo
+                    do continente, como Londres, Paris e Veneza, e também a aparição do enigmático Mysterio.</p>
+
+                <div class="botoes ">
+                    <button role="button " class="botao " onclick="abrirModal()">
+                        <i class="fas fa-play "></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button " class="botao" onclick="abrirInfo()">
+                        <i class="fas fa-info-circle "></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="carrosel-filmes ">
+        <div class="owl-carousel owl-theme ">
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-007.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-enc.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-got.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-loki.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-pkb.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-r6.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-rdt.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-twc.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-twd.jpg " alt=" ">
+            </div>
+            <div class="item ">
+                <img class="box-filme " src="assets/img/capa-venom.jpg " alt=" ">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-modal" id="modal">
+        <div class="modal">
+            <i class="far fa-play-circle" class="play"></i>
+            <span class="close" onclick="fecharModal()">&times;</span>
+
+
+        </div>
+    </div>
+
+    <div class="bg-info" id="info">
+        <div class="info">
+            <div class="conteudo">
+                <span class="close" onclick="fecharInfo()">&times;</span>
+                <section class="info-descricao">
+                    <p>Peter Parker está em uma viagem de duas semanas pela Europa, ao lado de seus amigos de colégio, quando é surpreendido pela visita de Nick Fury. Convocado para mais uma missão heroica, ele precisa enfrentar vários vilões que surgem
+                        em cidades-símbolo do continente, como Londres, Paris e Veneza, e também a aparição do enigmático Mysterio.</p>
+                </section>
+                <img src="https://www.themoviedb.org/t/p/original/tX0o4AdHpidgniTWwfzK0dNTKrc.jpg">
+                <section class="titulo">
+                    <h2>Homem-Aranha: Longe de Casa (2019)</h2>
+                </section>
+
+                <div class="diretores">
+                    <div class="esquerda">
+                        <p>Jon Watts<br/> "Director"
+                        </p>
+
+                    </div>
+
+                    <div class="centro">
+                        <p>Erik Sommers</br> "Screenplay"
+                        </p>
+
+                    </div>
+
+                    <div class="direita">
+                        <p>Chris McKenna</br>"Writer"
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <footer>DESENVOLVIDO PARA ESTUDO</footer>
+
+
+    <script src="https://kit.fontawesome.com/a23ebb2666.js " crossorigin="anonymous "></script>
+    <script src="assets/js/owl/jquery.min.js "></script>
+    <script src="assets/js/owl/owl.carousel.min.js "></script>
+    <script src="assets/js/owl/setup.js "></script>
+
+    <!--player-->
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
