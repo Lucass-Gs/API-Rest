@@ -18,16 +18,20 @@ function jwtAuthenticationMiddleware (req: Request, res: Response ,next: NextFun
             throw new ForbiddenError('Tipo de autenticaçao invalida');
         }
 
-        const tokenPayload = JWT.verify(token, 'my_secret_key');
-
-        if (typeof tokenPayload !== 'object' || !tokenPayload.sub) {
-            throw new ForbiddenError('Token Invalido');
+        try{
+            const tokenPayload = JWT.verify(token, 'my_secret_key');
+    
+            if (typeof tokenPayload !== 'object' || !tokenPayload.sub) {
+                throw new ForbiddenError('Token Invalido');
+            }
+            
+            const user = {uuid: tokenPayload.sub, username: tokenPayload.username };
+            req.user = user;
+            next();   
+            
+        } catch(error){
+            next(error);
         }
-        
-        const user = {uuid: tokenPayload.sub, username: tokenPayload.username
-        };
-        req.user = user;
-        next();   
     } catch(error){
         next(error);
     }

@@ -28,7 +28,7 @@ authorizationRoute.post('/token', basicAuthenticationMiddleware ,async (req: Req
 });
 
 authorizationRoute.post('/token/validate', jwtAuthenticationMiddleware, (req: Request, res: Response, next: NextFunction) => {
-    res.status(StatusCodes.OK);
+    res.sendStatus(StatusCodes.OK);
 });
 
 
